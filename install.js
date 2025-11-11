@@ -50,45 +50,14 @@
 // }
 
 
-// import fs from "fs";
-// import path from "path";
-// import os from "os";
-
-// export function install() {
-//   const homeDir = os.homedir();
-//   const targetDir = path.join(homeDir, ".agile-ai-agent");
-//   const sourceDir = path.join(process.cwd(), ".agile-ai-agent");
-
-//   // If already installed → skip
-//   if (fs.existsSync(targetDir)) {
-//     console.log("✅ Agile AI Agent is already installed.");
-//     return;
-//   }
-
-//   // Copy recursively
-//   fs.cp(sourceDir, targetDir, { recursive: true }, (err) => {
-//     if (err) {
-//       console.error("❌ Install failed:", err);
-//     } else {
-//       console.log("✅ Agile AI Agent installed successfully!");
-//       console.log(`📁 Config stored in: ${targetDir}`);
-//       console.log("Run: npx agile-ai-agent install");
-//     }
-//   });
-// }
-
-
 import fs from "fs";
 import path from "path";
 import os from "os";
-import { fileURLToPath } from "url";
 
 export function install() {
-  const __dirname = path.dirname(fileURLToPath(import.meta.url));
-
   const homeDir = os.homedir();
   const targetDir = path.join(homeDir, ".agile-ai-agent");
-  const sourceDir = path.join(__dirname, ".agile-ai-agent"); // ← FIXED
+  const sourceDir = path.join(process.cwd(), ".agile-ai-agent");
 
   // If already installed → skip
   if (fs.existsSync(targetDir)) {
@@ -96,12 +65,14 @@ export function install() {
     return;
   }
 
+  // Copy recursively
   fs.cp(sourceDir, targetDir, { recursive: true }, (err) => {
     if (err) {
       console.error("❌ Install failed:", err);
-      return;
+    } else {
+      console.log("✅ Agile AI Agent installed successfully!");
+      console.log(`📁 Config stored in: ${targetDir}`);
+      console.log("Run: npx agile-ai-agent install");
     }
-    console.log("✅ Agile AI Agent installed successfully!");
-    console.log(`📁 Config stored in: ${targetDir}`);
   });
 }
