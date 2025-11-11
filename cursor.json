@@ -1,13 +1,15 @@
 {
-    "agents": {
-      "project-pilot": ".agileai/project-pilot.md",
-      "scrum-buddy": ".agileai/scrum-buddy.md",
-      "spec-writer": ".agileai/spec-writer.md"
-    },
-    "triggers": {
-      "*pilot": "project-pilot",
-      "*scrum": "scrum-buddy",
-      "*spec": "spec-writer"
-    }
+  "agents": {
+    "project-pilot": ".agile-ai-agent/agents/project-pilot.md",
+    "scrum-buddy": ".agile-ai-agent/agents/scrum-buddy.md",
+    "spec-writer": ".agile-ai-agent/agents/spec-writer.md"
+  },
+  "triggers": {
+    "*pilot": "project-pilot",
+    "*project": "project-pilot",
+    "*scrum": "scrum-buddy",
+    "*sprint": "scrum-buddy",
+    "*spec": "spec-writer",
+    "*requirements": "spec-writer"
   }
-  
+}
