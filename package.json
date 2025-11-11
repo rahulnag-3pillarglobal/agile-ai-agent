@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "type": "module",
   "bin": {
-    "agile-ai-agent": "./bin/agile-ai-agent.js"
-  }
+    "agile-ai-agent": "./bin/agile-ai-agent"
+  },
+  "files": [
+    "bin/",
+    "templates/",
+    "README.md"
+  ]
 }
