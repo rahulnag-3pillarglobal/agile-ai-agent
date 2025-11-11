@@ -1,0 +1,13 @@
+{
+    "agents": {
+      "project-pilot": ".agileai/project-pilot.md",
+      "scrum-buddy": ".agileai/scrum-buddy.md",
+      "spec-writer": ".agileai/spec-writer.md"
+    },
+    "triggers": {
+      "*pilot": "project-pilot",
+      "*scrum": "scrum-buddy",
+      "*spec": "spec-writer"
+    }
+  }
+  

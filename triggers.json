@@ -1,0 +1,6 @@
+{
+    "project-pilot": ["*pilot", "*project"],
+    "scrum-buddy": ["*scrum", "*sprint"],
+    "spec-writer": ["*spec", "*requirements"]
+  }
+  
