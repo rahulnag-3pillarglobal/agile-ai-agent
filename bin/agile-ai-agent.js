@@ -9,5 +9,3 @@ if (command === "install") {
   console.log("Usage:");
   console.log("  agile-ai-agent install");
 }
-
-

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "bin": {
-    "agile-ai-agent": "./bin/agile-ai-agent"
+    "agile-ai-agent": "./bin/agile-ai-agent.js"
   },
   "files": [
     "bin/",
