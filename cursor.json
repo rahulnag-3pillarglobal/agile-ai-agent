@@ -9,15 +9,19 @@
     "retro-sage": ".agile-ai-agent/agents/retro-sage.md"
   },
   "triggers": {
-    "*pilot": "project-pilot",
+   "*pilot": "project-pilot",
     "*project": "project-pilot",
     "*scrum": "scrum-buddy",
     "*sprint": "scrum-buddy",
     "*spec": "spec-writer",
     "*requirements": "spec-writer",
     "*dev": "dev-crafter",
+    "*code": "dev-crafter",
     "*qa": "qa-guardian",
+    "*test": "qa-guardian",
     "*release": "release-captain",
-    "*retro": "retro-sage"
+    "*deploy": "release-captain",
+    "*retro": "retro-sage",
+    "*improve": "retro-sage"
   }
 }
