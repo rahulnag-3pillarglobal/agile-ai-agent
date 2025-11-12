@@ -1,6 +1,9 @@
 {
-    "project-pilot": ["*pilot", "*project"],
-    "scrum-buddy": ["*scrum", "*sprint"],
-    "spec-writer": ["*spec", "*requirements"]
-  }
-  
+  "project-pilot": ["*pilot", "*plan", "*roadmap", "project"],
+  "scrum-buddy": ["*scrum", "*standup", "*sprint"],
+  "spec-writer": ["*spec", "*prd", "*requirement"],
+  "dev-crafter": ["*dev", "*code", "*implementation"],
+  "qa-guardian": ["*qa", "*test", "*bug"],
+  "release-captain": ["*release", "*deploy", "*notes"],
+  "retro-sage": ["*retro", "*review", "*feedback"]
+}

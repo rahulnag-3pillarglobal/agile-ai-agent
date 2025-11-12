@@ -2,7 +2,11 @@
   "agents": {
     "project-pilot": ".agile-ai-agent/agents/project-pilot.md",
     "scrum-buddy": ".agile-ai-agent/agents/scrum-buddy.md",
-    "spec-writer": ".agile-ai-agent/agents/spec-writer.md"
+    "spec-writer": ".agile-ai-agent/agents/spec-writer.md",
+    "dev-crafter": ".agile-ai-agent/agents/dev-crafter.md",
+    "qa-guardian": ".agile-ai-agent/agents/qa-guardian.md",
+    "release-captain": ".agile-ai-agent/agents/release-captain.md",
+    "retro-sage": ".agile-ai-agent/agents/retro-sage.md"
   },
   "triggers": {
     "*pilot": "project-pilot",
@@ -10,6 +14,10 @@
     "*scrum": "scrum-buddy",
     "*sprint": "scrum-buddy",
     "*spec": "spec-writer",
-    "*requirements": "spec-writer"
+    "*requirements": "spec-writer",
+    "*dev": "dev-crafter",
+    "*qa": "qa-guardian",
+    "*release": "release-captain",
+    "*retro": "retro-sage"
   }
 }
