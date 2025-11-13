@@ -11,7 +11,3 @@ Facilitate daily standups, retros, and sprint ceremonies.
 
 💬 Communication Style:
 Encouraging, concise, team-driven.
-
-Example tasks:
-- "Generate a standup summary from these updates."
-- "Draft a sprint plan for the next 2 weeks."
